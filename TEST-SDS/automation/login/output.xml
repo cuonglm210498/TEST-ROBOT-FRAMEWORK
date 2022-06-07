@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.10.4 on win32)" generated="20220606 20:05:27.073" rpa="false">
-<suite id="s1" name="Login" source="C:\Users\leman\Documents\Document_RobotFramework\Project\TEST-SDS\automation\login\Login.robot">
+<robot generator="Robot 3.2.2 (Python 3.10.4 on win32)" generated="20220607 10:04:20.993" rpa="false">
+<suite id="s1" name="Login" source="D:\Test\TEST-ROBOT-FRAMEWORK\TEST-SDS\automation\login\Login.robot">
 <test id="s1-t1" name="Login">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -8,20 +8,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20220606 20:05:27.537" level="INFO">Opening browser 'chrome' to base url 'http://practice.automationtesting.in/'.</msg>
-<status status="PASS" starttime="20220606 20:05:27.537" endtime="20220606 20:05:38.531"></status>
+<msg timestamp="20220607 10:04:21.183" level="INFO">Opening browser 'chrome' to base url 'http://practice.automationtesting.in/my-account/'.</msg>
+<status status="PASS" starttime="20220607 10:04:21.183" endtime="20220607 10:04:46.048"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220606 20:05:38.536" endtime="20220606 20:05:38.746"></status>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://a[text()='My Account']</arg>
-</arguments>
-<msg timestamp="20220606 20:05:38.756" level="INFO">Clicking link 'xpath://a[text()='My Account']'.</msg>
-<status status="PASS" starttime="20220606 20:05:38.755" endtime="20220606 20:05:41.160"></status>
+<status status="PASS" starttime="20220607 10:04:46.048" endtime="20220607 10:04:46.174"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -29,8 +21,8 @@
 <arg>id:username</arg>
 <arg>lemanhcuong0498@gmail.com</arg>
 </arguments>
-<msg timestamp="20220606 20:05:41.162" level="INFO">Typing text 'lemanhcuong0498@gmail.com' into text field 'id:username'.</msg>
-<status status="PASS" starttime="20220606 20:05:41.161" endtime="20220606 20:05:41.474"></status>
+<msg timestamp="20220607 10:04:46.175" level="INFO">Typing text 'lemanhcuong0498@gmail.com' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20220607 10:04:46.175" endtime="20220607 10:04:46.277"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -38,40 +30,48 @@
 <arg>id:password</arg>
 <arg>lemanhcuong</arg>
 </arguments>
-<msg timestamp="20220606 20:05:41.475" level="INFO">Typing text 'lemanhcuong' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20220606 20:05:41.475" endtime="20220606 20:05:41.636"></status>
+<msg timestamp="20220607 10:04:46.278" level="INFO">Typing text 'lemanhcuong' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20220607 10:04:46.277" endtime="20220607 10:04:46.344"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>xpath://input[@name='login' ]</arg>
+<arg>xpath://input[@name='login']</arg>
 </arguments>
-<msg timestamp="20220606 20:05:41.637" level="INFO">Clicking element 'xpath://input[@name='login' ]'.</msg>
-<status status="PASS" starttime="20220606 20:05:41.637" endtime="20220606 20:05:43.403"></status>
+<msg timestamp="20220607 10:04:46.344" level="INFO">Clicking element 'xpath://input[@name='login']'.</msg>
+<status status="PASS" starttime="20220607 10:04:46.344" endtime="20220607 10:04:47.771"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
 <arguments>
 <arg>//a[text()='Sign out']/..</arg>
-<arg>Hi</arg>
+<arg>Hello</arg>
 </arguments>
-<msg timestamp="20220606 20:05:43.677" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220606 20:05:43.680" level="FAIL">Element '//a[text()='Sign out']/..' should have contained text 'Hi' but its text was 'Hello lemanhcuong0498 (not lemanhcuong0498? Sign out)'.</msg>
-<status status="FAIL" starttime="20220606 20:05:43.404" endtime="20220606 20:05:43.681"></status>
+<msg timestamp="20220607 10:04:47.815" level="INFO">Element '//a[text()='Sign out']/..' contains text 'Hello'.</msg>
+<status status="PASS" starttime="20220607 10:04:47.771" endtime="20220607 10:04:47.815"></status>
 </kw>
-<status status="FAIL" starttime="20220606 20:05:27.535" endtime="20220606 20:05:43.682" critical="yes">Element '//a[text()='Sign out']/..' should have contained text 'Hi' but its text was 'Hello lemanhcuong0498 (not lemanhcuong0498? Sign out)'.</status>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//a[text()='Sign out']/../strong</arg>
+<arg>lemanhcuong0498</arg>
+</arguments>
+<msg timestamp="20220607 10:04:47.816" level="INFO">Verifying element '//a[text()='Sign out']/../strong' contains exact text 'lemanhcuong0498'.</msg>
+<status status="PASS" starttime="20220607 10:04:47.816" endtime="20220607 10:04:47.832"></status>
+</kw>
+<status status="PASS" starttime="20220607 10:04:21.183" endtime="20220607 10:04:47.833" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20220606 20:05:27.076" endtime="20220606 20:05:43.686"></status>
+<status status="PASS" starttime="20220607 10:04:20.994" endtime="20220607 10:04:47.834"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Login">Login</stat>
+<stat pass="1" fail="0" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
