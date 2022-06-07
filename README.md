@@ -19,6 +19,10 @@
 
 - Download chromedriver và chuyển vào thư mục python: C:\Program Files\Python310
 
+- Run testcases:
+	+ Di chuyển vào thư mục chứa testcase và mở cmd.
+	+ Gõ lệnh robot <TestCase_Name>.robot
+
 Link tham khảo:
 https://viblo.asia/p/robot-framework-su-dung-eclipse-OeVKB9Vr5kW
 https://www.youtube.com/watch?v=YBBXjekmm-c&ab_channel=TestmasterCenter
